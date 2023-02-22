@@ -17,7 +17,7 @@ if(!function_exists("cached_api_call"))
         else:
             $response = Http::get($url);
             $data = $response->json(); // Store API Json response as $data
-            Cache::add($url, $data, now()->addDay()); // Add to cache to enhance performance in subsequent calls
+            Cache::add($url, $data, now()->addDays(2)); // Add to cache to enhance performance in subsequent calls
         endif;
         return $data;
     }

@@ -12,7 +12,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        // $schedule->command('inspire')->hourly();
+        // Run the API Caching Command Daily - to get fresh results, refresh the cache, and prevent slow api responses to clients
+        $schedule->command('api:clear-cache')->daily();
     }
 
     /**
