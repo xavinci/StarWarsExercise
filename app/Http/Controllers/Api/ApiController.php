@@ -23,10 +23,13 @@ class ApiController extends Controller
         if(isset($data["starships"]) && is_array($data["starships"])):
             // Loop through starships related to Skywalker - Store in $starships array
             foreach($data["starships"] as $url):
-                $starships[] = cached_api_call($url);
+                $starship_data = cached_api_call($url);
+                if(isset($starship_data["name"])):
+                    $starships[] = $starship_data["name"];
+                endif;
             endforeach;
         endif;
-        return $starships; // Returning array will output as Json
+        return array_unique($starships); // Returning array will output as Json, array unique just in case there are duplicates.
     }
 
     /*
