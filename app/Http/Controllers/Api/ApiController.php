@@ -53,7 +53,7 @@ class ApiController extends Controller
         endif;
 
         // Remove Duplicates
-        $species_classifications = array_unique($species_classifications);
+        $species_classifications = array_values(array_unique($species_classifications)); // Using Array Values to Simplify the Array Results
 
         return $species_classifications; // Returning array will output as Json
     }
