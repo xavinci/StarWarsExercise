@@ -1,23 +1,43 @@
-# Coding Challenge
+# Star Wars Coding Challenge
 
-Your challenge, should you choose to accept it, is to build a server that queries the Star Wars API for information on how to beat the Galactic Empire.
+## Introduction
 
-## Requirements
+Thank you for the opportunity to prepare this Star Wars coding challenge for you. I decided to use Laravel as a framework for this, with 3 simple API routes and a single API controller with 3 corresponding methods. One of the first things I realized while working on the challenge was how slow the API responses would be due to all the calls we need to make to the SWAPI for each endpoint. Therefore, bearing in mind the API results for this particular data set are HIGHLY unlikely to change on a 24-hour basis, I decided to implement some basic file-based caching. After the initial calls are made, the requests become considerably faster as a result. I did include a call to perform the tests in composer using the artisan test command so that upon composer installation, the cache will be populated, so by time you run the first endpoint calls, it should be very fast.  
 
-1. Build a REST API to connect to the [Star Wars API](https://swapi.dev/documentation#intro)
+## API Endpoints
 
-2. Include a readme on how to interact with the API
+### 1.) GET /luke-skywalker/starships
 
-3. Include tests
+#### Purpose: Return a list of the Starships related to Luke Skywalker
 
-## Endpoints to build
+Response Example:
 
-1. Return a list of the Starships related to Luke Skywalker
+Content-Type: application/json
 
-2. Return the classification of all species in the 1st episode
+    {["X-wing","Imperial shuttle"]}
 
-3. Return the total population of all planets in the Galaxy
+### 2.) GET /first-episode/species
 
-## Submission
+#### Purpose: Return the classification of all species in the 1st episode
 
-Upload your application to a public repository and share the link with us
+Response Example:
+
+Content-Type: application/json
+
+    {["mammal","artificial","unknown","amphibian","mammals","reptile"]}
+
+### 3.) GET /all-planets/population
+
+#### Purpose: Return the total population of all planets in the Galaxy
+
+Response Example:
+
+Content-Type: application/json
+
+    {"population":"1,711,401,432,500"}
+
+## Testing
+
+Testing can be performed using Laravel's built-in HTTP testing facility. To test all 3 endpoints, simply use the artisan command: 
+
+    php artisan test
