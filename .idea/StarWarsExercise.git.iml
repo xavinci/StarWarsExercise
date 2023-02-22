@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/doctrine/inflector/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/dragonmantank/cron-expression/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/fakerphp/faker/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/filp/whoops/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/guzzle/src" isTestSource="false" packagePrefix="GuzzleHttp" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/hamcrest/hamcrest-php/hamcrest" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/hamcrest/hamcrest-php/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/laravel/framework/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/mockery/mockery/library" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/monolog/monolog/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/myclabs/deep-copy/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/nesbot/carbon/lazy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/nesbot/carbon/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/nette/schema/src" isTestSource="false" packagePrefix="Nette" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/nette/utils/src" isTestSource="false" packagePrefix="Nette" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/nikic/php-parser/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/nunomaduro/termwind/src" isTestSource="false" packagePrefix="Termwind" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/phpoption/phpoption/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/phpunit/phpunit/src" isTestSource="false" packagePrefix="PHPUnit" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/psy/psysh/src" isTestSource="false" packagePrefix="Psy" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/sebastian/complexity/src" isTestSource="false" packagePrefix="SebastianBergmann" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/sebastian/type/src" isTestSource="false" packagePrefix="SebastianBergmann" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv/src" isTestSource="false" packagePrefix="Dotenv" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/voku/portable-ascii/src" isTestSource="false" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

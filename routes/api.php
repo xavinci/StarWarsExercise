@@ -24,3 +24,8 @@ Route::get('/luke-skywalker/starships', [ \App\Http\Controllers\Api\ApiControlle
  */
 Route::get('/first-episode/species', [ \App\Http\Controllers\Api\ApiController::class , "firstEpisodeSpecies"])->name("first_episode.species");
 
+/*
+ * Return the total population of all planets in the Galaxy
+ */
+Route::get('/all-planets/population', [ \App\Http\Controllers\Api\ApiController::class , "totalPopulationOfAllPlanets"])->name("all_planets.population");
+
