@@ -19,3 +19,8 @@ use Illuminate\Support\Facades\Route;
  */
 Route::get('/luke-skywalker/starships', [ \App\Http\Controllers\Api\ApiController::class , "lukeSkywalkerStarships"])->name("luke_skywalker.starships");
 
+/*
+ * Return the classification of all species in the 1st episode
+ */
+Route::get('/first-episode/species', [ \App\Http\Controllers\Api\ApiController::class , "firstEpisodeSpecies"])->name("first_episode.species");
+
