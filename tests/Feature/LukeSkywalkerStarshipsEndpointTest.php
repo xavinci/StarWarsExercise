@@ -11,7 +11,7 @@ class LukeSkywalkerStarshipsEndpointTest extends TestCase
     /**
      * A basic feature test example.
      */
-    public function test_example(): void
+    public function test_luke_skywalker_starships(): void
     {
         $response = $this->get(route("luke_skywalker.starships"));
 

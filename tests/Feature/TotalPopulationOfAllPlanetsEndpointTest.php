@@ -11,7 +11,7 @@ class TotalPopulationOfAllPlanetsEndpointTest extends TestCase
     /**
      * A basic feature test example.
      */
-    public function test_example(): void
+    public function test_total_population_of_all_planets(): void
     {
         $response = $this->get(route("all_planets.population"));
 

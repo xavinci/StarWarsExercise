@@ -11,7 +11,7 @@ class FirstEpisodeSpeciesClassificationsEndpointTest extends TestCase
     /**
      * A basic feature test example.
      */
-    public function test_example(): void
+    public function test_first_episode_species_classifications(): void
     {
         $response = $this->get(route("first_episode.species"));
 
